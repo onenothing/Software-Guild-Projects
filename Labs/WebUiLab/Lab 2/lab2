@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+
+
+
+
+<div class="row">
+ 
+<div class="span6">
+ 
+<form class="form-signin">
+ <h2 class="form-signin-heading">Please sign in</h2>
+ <input type="text" class="input-block-level" placeholder="Email address">
+ <input type="password" class="input-block-level" placeholder="Password">
+ <label class="checkbox">
+ <input type="checkbox" value="remember-me"> Remember me
+ </label>
+ <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+ </form>
+ 
+</div>
+ 
+ <div class="span6">
+ 
+<form class="form-signin">
+ <h2 class="form-signin-heading">Please sign in</h2>
+ <input type="text" class="input-block-level" placeholder="Email address">
+ <input type="password" class="input-block-level" placeholder="Password">
+ <label class="checkbox">
+ <input type="checkbox" value="remember-me"> Remember me
+ </label>
+ <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+ </form>
+ 
+</div>
+ 
+</div>
+
+
+	<script type="js/jquery-2.2.2.min-js"></script>
+	<script type="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>

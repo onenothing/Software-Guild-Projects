@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6-Apr-2016, 4:12:51 PM
+    Author     : Adam Coate <adamcoate1@gmail.com>
+*/
+
+body{
+/*    background-color: ;*/
+    margin-top: 150px;
+    /*    background-image: url('../img/rolo2.jpg');
+        background-size: 50%;
+        background-repeat: no-repeat;*/
+    /*    background-color: lightblue;*/
+}
+.bg {
+    
+}
+
+.jumbotron {
+    padding-top : 2px !important;
+    height: 145px;
+    color: white;
+    text-shadow: #444 0 3px 3px;
+    background: url('../img/head.jpg') no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+.jumbotron h1 {
+    margin-top: 20px !important;
+    margin-left: 20px !important;
+}
