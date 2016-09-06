@@ -1,0 +1,1 @@
+SELECT `zip` FROM `contacts` WHERE contactID=3;

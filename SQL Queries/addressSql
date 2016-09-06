@@ -1,0 +1,36 @@
+<-- Get All Addresses -->
+SELECT * FROM `addresses`;
+
+<-- Search Addresses -->
+SELECT `zip` FROM `addresses` WHERE addressID=3;
+
+SELECT `zip` FROM `addresses` WHERE state = 'California';
+
+<-- Get Address By ID -->
+SELECT addressID, city FROM addresses;
+
+SELECT addressID, address FROM addresses;
+
+<-- ADD Address -->
+INSERT INTO `addresses`(`firstName`, `lastName`, `company`, `city`, `state`, `zip`) 
+VALUES ('Tina', 'Fey', 'FunnyBone', 'New York City', 'New York', 33456);
+
+<-- UPDATE Addresses -->
+UPDATE addresses 
+SET firstName = 'Eddie', address= 'Runny Eggs' 
+WHERE addressID = 2;
+
+UPDATE addresses
+SET firstName='Ralph', City='Escondido'
+WHERE lastName= 'Mills';
+
+UPDATE addresses
+SET city='Columbus' 
+WHERE contactID %4 = 0;
+
+<-- Remove Address -->
+DELETE FROM addresses
+WHERE firstName='Eddie';
+
+DELETE FROM addresses
+WHERE addressID = 23;

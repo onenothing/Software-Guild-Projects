@@ -1,0 +1,34 @@
+<-- Get All Contacts -->
+SELECT * FROM `contacts`;
+
+<-- Search Contacts -->
+SELECT `zip` FROM `contacts` WHERE contactID=3;
+
+<-- Get Contact By ID -->
+SELECT contactID, city FROM contacts;
+
+<-- ADD Contacts -->
+INSERT INTO `contacts`(`firstName`, `lastName`, `company`, `city`, `state`, `zip`) 
+VALUES ('Tina', 'Fey', 'FunnyBone', 'New York City', 'New York', 33456);
+
+<-- UPDATE Contacts -->
+UPDATE contacts 
+SET firstName = 'Eddie', company= 'Runny Eggs' 
+WHERE contactID = 2;
+
+UPDATE contacts
+SET firstName='Ralph', City='Detroit'
+WHERE contactID= 2;
+
+UPDATE contacts
+SET company='Centurion' 
+WHERE contactID %4 = 0;
+
+<-- Remove Contact -->
+DELETE FROM contacts
+WHERE firstName='Eddie';
+
+
+
+
+

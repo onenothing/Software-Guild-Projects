@@ -1,0 +1,38 @@
+<-- Get All Dvds -->
+SELECT * FROM `dvdList`;
+
+<-- Search Dvds -->
+SELECT `directorsName` FROM `dvdList` WHERE dvdID=11;
+
+SELECT `dvdTitle` FROM `dvdList` WHERE mpaaRating = 'R';
+
+SELECT `releaseDate` FROM `dvdList` WHERE studio = 'Universal';
+
+<-- Get Dvd By ID -->
+SELECT dvdID, mpaaRating FROM dvdList;
+
+SELECT dvdID, studio FROM dvdList;
+
+<-- ADD Dvd -->
+INSERT INTO `dvdList`(`dvdTitle`, `directorsName`, `mpaaRating`, `studio`, `releaseDate`) 
+VALUES ('Dirty Dancing', 'Emile Ardolino', 'PG', 'Paramount', 19870821);
+
+<-- UPDATE Dvds -->
+UPDATE dvdList 
+SET dvdTitle = 'Roadhouse', directorsName = 'Rowdy Herrington' 
+WHERE dvdID = 3;
+
+UPDATE dvdList
+SET dvdTitle='Kill Bill', mpaaRating ='G'
+WHERE directorsName= 'Kaufman';
+
+UPDATE dvds
+SET studio='Paramount' 
+WHERE contactID %4 = 0;
+
+<-- Remove Dvd -->
+DELETE FROM dvdList
+WHERE dvdTitle='Marvins Room';
+
+DELETE FROM dvdList
+WHERE dvdID = 5;
